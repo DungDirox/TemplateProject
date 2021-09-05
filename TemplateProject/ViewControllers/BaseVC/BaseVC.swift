@@ -19,7 +19,24 @@ class BaseVC: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-       self.settupViews()
+//        self.settupViews() remove here
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.view = nil
+        self.loadViewIfNeeded()
+//        self.view.remove
+        Log.d(view.subviews.count)
+
+//        label = nil
+//        Log.d(label == nil)
+        
+        Utils.delay(1) {
+            self.label.text = "Hello"
+            Log.d(self.label.text)
+            let aaa = self.view.subviews
+            Log.d(aaa)
+        }
     }
     
     // MARK: - private function
