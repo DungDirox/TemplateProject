@@ -10,6 +10,8 @@ import UIKit
 
 class BaseVC: UIViewController {
     
+    @IBOutlet weak var label: UILabel!
+    
     enum SwitchAnimation {
         case top, bottom, fade
     }
@@ -17,8 +19,24 @@ class BaseVC: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.settupViews()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.view = nil
+        self.loadViewIfNeeded()
+//        self.view.remove
+        Log.d(view.subviews.count)
+
+//        label = nil
+//        Log.d(label == nil)
         
-        self.settupViews()
+        Utils.delay(1) {
+            self.label.text = "Hello"
+            Log.d(self.label.text)
+            let aaa = self.view.subviews
+            Log.d(aaa)
+        }
     }
     
     // MARK: - private function
