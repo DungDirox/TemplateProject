@@ -23,7 +23,6 @@
 		A0CA6EDA22BB9FC200DA6ED4 /* GoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA6ED922BB9FC200DA6ED4 /* GoogleHelper.swift */; };
 		A0CF5C2E2424B1740062A8E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0CF5C302424B1740062A8E9 /* Localizable.strings */; };
 		A0D0479D22E1DB3D006A81D5 /* UIButtonEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D0479A22E1DB3D006A81D5 /* UIButtonEx.swift */; };
-		A0D39E1726E46C3E00FBD315 /* Heheh.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D39E1626E46C3E00FBD315 /* Heheh.swift */; };
 		D0DAE98D6BE3F989484D1456 /* Pods_TemplateProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA573B5AC986056DB03586C /* Pods_TemplateProject.framework */; };
 		E80B521620A0E275000083AE /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80B521520A0E275000083AE /* UIColorEx.swift */; };
 		E880D09B1F807803002EEB55 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880D09A1F807803002EEB55 /* Log.swift */; };
@@ -57,7 +56,6 @@
 		A0CA6ED922BB9FC200DA6ED4 /* GoogleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleHelper.swift; sourceTree = "<group>"; };
 		A0CF5C2F2424B1740062A8E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A0D0479A22E1DB3D006A81D5 /* UIButtonEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonEx.swift; sourceTree = "<group>"; };
-		A0D39E1626E46C3E00FBD315 /* Heheh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heheh.swift; sourceTree = "<group>"; };
 		BAB76CFD7309A3C94DCD59DA /* Pods-TemplateProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemplateProject/Pods-TemplateProject.debug.xcconfig"; sourceTree = "<group>"; };
 		E80B521520A0E275000083AE /* UIColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
 		E880D09A1F807803002EEB55 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			children = (
 				E8B892DE1F7FFF8000DDA048 /* BaseVC.swift */,
 				E8B892E01F7FFF8000DDA048 /* Main.storyboard */,
-				A0D39E1626E46C3E00FBD315 /* Heheh.swift */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -380,7 +377,6 @@
 				E880D0A11F809F4F002EEB55 /* Utils.swift in Sources */,
 				A0CA6EDA22BB9FC200DA6ED4 /* GoogleHelper.swift in Sources */,
 				1846D4A523426164003CA96F /* CollectionEx.swift in Sources */,
-				A0D39E1726E46C3E00FBD315 /* Heheh.swift in Sources */,
 				9A9B086D23D7EF3700AC58FD /* UINavigationControllerEx.swift in Sources */,
 				18D1CF6A2323556C002B3E1F /* CameraHelper.swift in Sources */,
 				A0D0479D22E1DB3D006A81D5 /* UIButtonEx.swift in Sources */,
