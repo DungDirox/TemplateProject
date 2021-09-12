@@ -1,5 +1,5 @@
 //
-//  FacebookHelper.swift
+//  FacebookLogin.swift
 //  IDareU
 //
 //  Created by Dung Do on 6/20/19.
@@ -9,9 +9,7 @@
 import FacebookCore
 import FacebookLogin
 
-class FacebookHelper {
-    
-    static let shared = FacebookHelper()
+class FacebookLogin: SocialLogin {
     
     private let loginManager = LoginManager()
     
@@ -21,8 +19,6 @@ class FacebookHelper {
         }
         return false
     }
-    
-    private init() {}
     
     func login(on vc: UIViewController, complete: @escaping (Dictionary<String, Any>?, Error?)->()) {
         if self.isLogin {

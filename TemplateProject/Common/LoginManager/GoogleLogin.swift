@@ -1,5 +1,5 @@
 //
-//  GoogleHelper.swift
+//  GoogleLogin.swift
 //  IDareU
 //
 //  Created by Dung Do on 6/20/19.
@@ -8,15 +8,11 @@
 
 import GoogleSignIn
 
-class GoogleHelper {
-    
-    static let shared = GoogleHelper()
+class GoogleLogin: SocialLogin {
     
     private let loginManager = GIDSignIn.sharedInstance
     
     private let signInConfig = GIDConfiguration.init(clientID: "601387200679-mbe30uea2pir2d8f8htk30hhkuqvbk4v.apps.googleusercontent.com")
-    
-    private init() {}
     
     func login(on vc: UIViewController, complete: @escaping (Dictionary<String, Any>?, Error?)->()) {
         self.loginManager.restorePreviousSignIn { user, error in
