@@ -41,16 +41,6 @@ struct Utils {
         return passwordTest.evaluate(with: password.trim())
     }
     
-    static func getViewFromXib(name: String) -> UIView? {
-        return UINib.init(nibName: name, bundle: nil).instantiate(withOwner: nil, options: nil).first as? UIView
-    }
-    
-    static func getViewController(name: String) -> UIViewController {
-        let storyboard = UIStoryboard(name: name, bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: name)
-        return vc
-    }
-    
     static func object<T: Decodable>(from data: Data, type: T.Type) -> T? {
         do {
             return try JSONDecoder().decode(type, from: data)

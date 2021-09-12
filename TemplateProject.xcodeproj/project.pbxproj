@@ -17,6 +17,7 @@
 		A00A48D422B8E62000361448 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00A48D322B8E62000361448 /* LocationHelper.swift */; };
 		A021C89922EE9D35000649BA /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A021C89822EE9D35000649BA /* FileHelper.swift */; };
 		A02CB23620888043008D1117 /* DateEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02CB23520888043008D1117 /* DateEx.swift */; };
+		A07AF89026EE20DA0020DA55 /* UIViewControllerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07AF88F26EE20DA0020DA55 /* UIViewControllerEx.swift */; };
 		A096529922BB457900FFABD3 /* FacebookLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A096529822BB457900FFABD3 /* FacebookLogin.swift */; };
 		A0BA6DED20A2A45E0041466D /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA6DEC20A2A45E0041466D /* AlertHelper.swift */; };
 		A0C5700326ECF962007E798B /* SocialLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5700226ECF962007E798B /* SocialLogin.swift */; };
@@ -52,6 +53,7 @@
 		A00A48D322B8E62000361448 /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 		A021C89822EE9D35000649BA /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		A02CB23520888043008D1117 /* DateEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateEx.swift; sourceTree = "<group>"; };
+		A07AF88F26EE20DA0020DA55 /* UIViewControllerEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerEx.swift; sourceTree = "<group>"; };
 		A096529822BB457900FFABD3 /* FacebookLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookLogin.swift; sourceTree = "<group>"; };
 		A0BA6DEC20A2A45E0041466D /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		A0C5700226ECF962007E798B /* SocialLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLogin.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				A0D0479A22E1DB3D006A81D5 /* UIButtonEx.swift */,
 				9A6127182392811300BB5FE6 /* UIRefreshControlEx.swift */,
 				9A9B086C23D7EF3700AC58FD /* UINavigationControllerEx.swift */,
+				A07AF88F26EE20DA0020DA55 /* UIViewControllerEx.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				A096529922BB457900FFABD3 /* FacebookLogin.swift in Sources */,
 				A0BA6DED20A2A45E0041466D /* AlertHelper.swift in Sources */,
 				9A94BCB620A0B6FA00A60DED /* UIViewEx.swift in Sources */,
+				A07AF89026EE20DA0020DA55 /* UIViewControllerEx.swift in Sources */,
 				E8A025041F851F890082DA91 /* UIImageViewEx.swift in Sources */,
 				E8B892DF1F7FFF8000DDA048 /* BaseVC.swift in Sources */,
 				A0C5700526ECF99C007E798B /* LoginManager.swift in Sources */,

@@ -91,10 +91,6 @@ struct K {
         static let Light    = "SourceSansPro-Light"
     }
     
-    struct Screens {
-        static let ViewControllers = "ViewControllers"
-    }
-    
     struct Keys {
         static let isLaunchedBefore = "isLaunchedBefore"
         static let CurrentLanguage  = "CurrentLanguage"
