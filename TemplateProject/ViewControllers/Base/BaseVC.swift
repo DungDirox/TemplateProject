@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import RxSwift
 
 class BaseVC: UIViewController {
+    
+    let disposeBag = DisposeBag()
     
     enum SwitchAnimation {
         case top, bottom, fade
@@ -17,36 +20,41 @@ class BaseVC: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.settupViews()
+        setupViews()
+        locaize()
+        setupRx()
     }
     
     // MARK: - private function
-    private func settupViews() {
-        self.navigationController?.isNavigationBarHidden = true
+    func setupViews() {
+        navigationController?.isNavigationBarHidden = true
         
         let tapCloseKeyboard = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
-        self.view.addGestureRecognizer(tapCloseKeyboard)
+        view.addGestureRecognizer(tapCloseKeyboard)
         tapCloseKeyboard.cancelsTouchesInView = false
     }
     
+    func locaize() {}
+    
+    func setupRx() {}
+    
     @objc func closeKeyboard() {
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
     
     func backToRoot(animation: SwitchAnimation = .fade) {
-        self.switchToAnimation(animation)
-        self.navigationController?.popToRootViewController(animated: false)
+        switchToAnimation(animation)
+        navigationController?.popToRootViewController(animated: false)
     }
     
     func show(_ vc: UIViewController, animation: SwitchAnimation) {
-        self.switchToAnimation(animation)
-        self.navigationController?.pushViewController(vc, animated: false)
+        switchToAnimation(animation)
+        navigationController?.pushViewController(vc, animated: false)
     }
     
     func hidden(animation: SwitchAnimation = .fade) {
-        self.switchToAnimation(animation)
-        self.navigationController?.popViewController(animated: false)
+        switchToAnimation(animation)
+        navigationController?.popViewController(animated: false)
     }
     
     private func switchToAnimation(_ animation: SwitchAnimation) {
@@ -65,7 +73,7 @@ class BaseVC: UIViewController {
             transition.type = .fade
         }
         
-        self.navigationController?.view.layer.removeAnimation(forKey: "ShowAnimation")
-        self.navigationController?.view.layer.add(transition, forKey: "ShowAnimation")
+        navigationController?.view.layer.removeAnimation(forKey: "ShowAnimation")
+        navigationController?.view.layer.add(transition, forKey: "ShowAnimation")
     }
 }

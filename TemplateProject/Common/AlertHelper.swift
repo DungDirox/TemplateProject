@@ -14,7 +14,7 @@ struct AlertHelper {
     
     static func showPopup(on viewController: UIViewController,
                           title: String,
-                          message: String?,
+                          message: String? = nil,
                           mainButton: String,
                           mainComplete: ((UIAlertAction)->())?,
                           otherButton: String? = nil,
