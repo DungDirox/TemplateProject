@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = nav
         self.window?.makeKeyAndVisible()
         
-        return true
+        return true;
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
